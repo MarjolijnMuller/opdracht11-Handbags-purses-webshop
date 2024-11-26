@@ -27,28 +27,36 @@ function App() {
             <main>
 
                 <Product
-                    extraInfo="Best seller"
+                    isBestSeller={true}
+                    isNewCollection={false}
                     image={bag1}
                     bagName="The handy bag"
-                    price="€400,-"
+                    price={400}
+                    imageAltText="Beige handtas"
                 />
                 <Product
-                    extraInfo="Best seller"
+                    isBestSeller={true}
+                    isNewCollection={false}
                     image={bag2}
                     bagName="The stylish bag"
-                    price="€250,-"
+                    price={250}
+                    imageAltText="Bruine handtas"
                 />
                 <Product
-                    extraInfo="New Collection"
+                    isBestSeller={false}
+                    isNewCollection={true}
                     image={bag3}
                     bagName="The simple bag"
-                    price="€300,-"
+                    price={300}
+                    imageAltText="Legergroene handtas"
                 />
                 <Product
-                    extraInfo="New collection"
+                    isBestSeller={false}
+                    isNewCollection={true}
                     image={bag4}
                     bagName="The trendy bag"
-                    price="€150,-"
+                    price={150}
+                    imageAltText="Okergele handtas"
                 />
             </main>
             <footer>

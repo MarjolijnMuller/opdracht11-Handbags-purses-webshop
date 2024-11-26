@@ -1,15 +1,30 @@
+function renderBestSeller(isBestSeller) {
+    if (isBestSeller) {
+        return <p>Best seller</p>;
+    }
+    return null
+}
+
+function renderNewCollection(isNewCollection) {
+    if (isNewCollection) {
+        return <p>New collection</p>;
+    }
+    return null
+}
+
 function Product(props){
     return (
         <article>
             <span>
-                {props.extraInfo}
+                {renderBestSeller(props.isBestSeller)}
+                {renderNewCollection(props.isNewCollection)}
             </span>
-            <img src={props.image}/>
+            <img src={props.image} alt={props.imageAltText}/>
             <p>
                 {props.bagName}
             </p>
             <h4>
-                {props.price}
+                €{props.price},-
             </h4>
         </article>
     )
